@@ -1,0 +1,121 @@
+.pai {
+  background: #eee;
+  padding-bottom: 100px;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.skilsTitulo {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: right;
+  margin: 200px 0 100px 0;
+  padding-top: 100px;
+}
+.containerImgSpell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardSpell {
+  margin-right: 40px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.cardSpell img {
+  filter: contrast(0.5);
+  transition: 0.3s;
+  border-radius: 25px;
+}
+
+.cardSpell img:hover,
+img.ativo {
+  filter: contrast(1);
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+.containerDescricao {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.containerDescricao span {
+  width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.containerDescricao p {
+  text-align: left;
+  padding: 0px;
+  font-size: 1.1rem;
+  padding-bottom: 20px;
+  max-width: 600px;
+}
+video {
+  position: absolute;
+  bottom: -400px;
+  visibility: hidden;
+  max-width: 600px;
+}
+video.ativo {
+  visibility: visible;
+}
+
+.containerSecond {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .skilsTitulo {
+    text-align: center;
+  }
+  .containerSecond {
+    flex-direction: column;
+    width: 100%;
+  }
+  .containerImgSpell {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .containerDescricao {
+    width: 100%;
+    text-align: center;
+  }
+  video {
+    top: 150px;
+    right: calc((100% - 600px) / 2);
+    width: 100%;
+    padding: 10px;
+  }
+
+  .containerDescricao span,
+  .containerDescricao p {
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0px 20px;
+  }
+  .containerDescricao p {
+    margin-top: 10px;
+    padding-bottom: 600px;
+  }
+  .cardSpell {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 650px) {
+  video {
+    right: calc((100% - 300px) / 2);
+    max-width: 300px;
+  }
+}

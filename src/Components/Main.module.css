@@ -1,0 +1,11 @@
+.MainDarkmode {
+  background-color: #0f0f0f;
+  padding-top: 100px;
+  transition: 0.3s;
+  min-height: 100vh;
+}
+.MainLightmode {
+  padding-top: 100px;
+  transition: 0.3s;
+  min-height: 100vh;
+}

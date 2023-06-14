@@ -1,0 +1,21 @@
+.inputLightmode {
+  display: block;
+  width: 270px;
+  height: 40px;
+  padding: 12px 10px 12px 5px;
+  border: 1px solid black;
+  background-color: #fff;
+  text-align: center;
+  margin: 0px auto;
+}
+.inputDarkmode {
+  color: #fff;
+  display: block;
+  width: 270px;
+  height: 40px;
+  padding: 12px 10px 12px 5px;
+  border: 1px solid #fff;
+  background-color: #0f0f0f;
+  text-align: center;
+  margin: 0px auto;
+}

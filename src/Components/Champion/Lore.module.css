@@ -1,0 +1,27 @@
+.lore {
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.loreTitulo {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.loreDescricao {
+  max-width: 60%;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  margin: 50px 0;
+  line-height: 2.5rem;
+  text-align: left;
+}
+@media (max-width: 1200px) {
+  .loreTitulo,
+  .loreDescricao {
+    max-width: 100%;
+    text-align: center;
+    padding: 40px;
+  }
+}

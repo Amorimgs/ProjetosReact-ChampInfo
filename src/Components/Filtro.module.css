@@ -1,0 +1,13 @@
+.filtro {
+  max-width: 1024px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .filtro {
+    padding: 0px 20px;
+  }
+}
